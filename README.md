@@ -1,73 +1,144 @@
-# Welcome to your Lovable project
+# Health Navigator - UI Presentation Project
 
-## Project info
+## Overview
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**Health Navigator** is a comprehensive healthcare management UI designed for presentation purposes. This is a **UI-only demonstration project** showcasing a modern, responsive interface for managing healthcare services, consultations, medical records, and preventive care.
 
-## How can I edit this code?
+> **Note:** This project is designed as a visual prototype and presentation demo. It demonstrates UI/UX design patterns and user workflows without backend integration.
 
-There are several ways of editing your application.
 
-**Use Lovable**
+## Project Purpose
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+This UI prototype demonstrates:
+- Modern healthcare application design patterns
+- User-friendly interfaces for medical consultations
+- Electronic Health Records (EHR) visualization
+- Medication and appointment tracking
+- Responsive navigation and layouts
+- Professional healthcare UX workflows
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
+## Pages & Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 1. **Home Dashboard** (`HomeDashboard.tsx`)
+Main landing page providing an overview of healthcare services and quick access to key features.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+![Home Dashboard](screenshots/01-home-dashboard.png)
 
-Follow these steps:
+### 2. **Symptom Intake** (`SymptomIntake.tsx`)
+User-friendly form for patients to report symptoms and health concerns.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+![Symptom Intake](screenshots/02-symptom-intake.png)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 3. **Doctor Listing** (`DoctorListing.tsx`)
+Browse and view available doctors with their specializations and availability.
 
-# Step 3: Install the necessary dependencies.
-npm i
+![Doctor Listing](screenshots/doctor-listing.png)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### 4. **Consultation Screen** (`ConsultationScreen.tsx`)
+Interface for scheduling and managing doctor consultations.
+
+![Consultation Screen](screenshots/consultationscreen.png)
+
+### 5. **Hospital Availability** (`HospitalAvailability.tsx`)
+View hospital services, bed availability, and facility information.
+
+![Hospital Availability](screenshots/hospitavailablity.png)
+
+### 6. **EHR Timeline** (`EHRTimeline.tsx`)
+Electronic Health Records displayed in a timeline format for easy medical history review.
+
+![EHR Timeline](screenshots/healthrecords.png)
+
+### 7. **Medication Tracker** (`MedicationTracker.tsx`)
+Track medications, dosages, and refill schedules.
+
+![Medication Tracker](screenshots/medications.png)
+
+### 8. **Preventive Dashboard** (`PreventiveDashboard.tsx`)
+Health insights and preventive care recommendations.
+
+![Preventive Dashboard](screenshots/preventivedashboard.png)
+
+### 9. **Services Screen** (`ServicesScreen.tsx`)
+Overview of available healthcare services and offerings.
+
+![Services Screen](screenshots/preventivedashboard.png)
+
+### 10. **Profile Screen** (`ProfileScreen.tsx`)
+User profile management and personal health information.
+
+![Profile Screen](screenshots/profile.png)
+
+
+## Project Structure
+
+```
+src/
+├── pages/              # Main page components
+├── components/         # Reusable components
+│   ├── healthcare/     # Health-specific components (MedicalCard, StatusBadge, etc.)
+│   ├── layout/         # Layout components (AppLayout)
+│   └── ui/             # UI primitives (buttons, cards, dialogs, etc.)
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+├── App.tsx             # Main application component
+├── main.tsx            # Entry point
+└── index.css           # Global styles
 ```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Technology Stack
 
-**Use GitHub Codespaces**
+- **React** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool
+- **Tailwind CSS** - Styling (via shadcn/ui components)
+- **shadcn/ui** - Component library
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+## UI Components
 
-This project is built with:
+The project includes a comprehensive set of reusable components:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Healthcare-Specific Components:
+- `MedicalCard` - Display medical information
+- `StatusBadge` - Status indicators
+- `SeverityIndicator` - Health severity levels
+- `ProgressSteps` - Multi-step workflows
+- `EmptyState`, `ErrorState`, `LoadingState` - State management UI
 
-## How can I deploy this project?
+### UI Primitives:
+- Buttons, Cards, Dialogs, Forms
+- Tables, Charts, Progress bars
+- Accordions, Tabs, Badges
+- Navigation menus, Sidebars
+- And 40+ more shadcn/ui components
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
+## 🚀 Getting Started
 
-Yes, you can!
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+2. **Run development server:**
+   ```bash
+   npm run dev
+   ```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+3. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+4. **View the application:**
+   Open your browser and navigate to the local dev server URL (typically `http://localhost:5173`)
+
+
+## Important Notes
+
+- **No Backend Integration:** This is a frontend-only prototype. API calls are not implemented.
+- **Mock Data:** Any data displayed is for demonstration purposes only.
+- **Presentation Ready:** All UI states (loading, error, empty) are implemented and ready to showcase.
